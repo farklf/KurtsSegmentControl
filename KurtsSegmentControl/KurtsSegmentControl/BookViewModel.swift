@@ -19,7 +19,9 @@ class ViewModel {
     
     var myBooks = [Book](){
         didSet {
-            delegate?.updateView()
+    //      delegate?.updateView()
+            NotificationCenter.default.post(name: Notification.Name("Object"), object: nil)
+            print("Object Count: \(myBooks.count)")
         }
     }
     

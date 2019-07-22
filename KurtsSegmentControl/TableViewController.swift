@@ -28,8 +28,11 @@ class TableViewController: UIViewController {
             super.viewDidLoad()
             print("in table view controller")
             viewModel.get(books: "Harry Potter")
-            viewModel.delegate = (self as! ViewModelDelegate)
+       //     viewModel.delegate = (self as! ViewModelDelegate)
             
+            NotificationCenter.default.addObserver(forName: Notification.Name("Object"), object: nil, queue: .main) { [unowned self] _ in
+                self.tableView.reloadData()
+            }
         }
         
         override func viewWillDisappear(_ animated: Bool) {
@@ -73,10 +76,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 cell.bookKindLabel.text = book.kind
                 cell.bookIdLabel.text = book.id
-                print(book.kind)
-                print(book.thumbnail)
-                print(book.id)
-                print("123")
+               
                 
                 let url = URL(string: book.thumbnail)!
                 

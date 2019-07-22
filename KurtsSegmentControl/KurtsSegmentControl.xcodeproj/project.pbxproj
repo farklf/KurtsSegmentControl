@@ -20,6 +20,7 @@
 		02D8499022E3D117005C65E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D8498E22E3D117005C65E0 /* LaunchScreen.storyboard */; };
 		02D8499822E3E2B9005C65E0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8499722E3E2B9005C65E0 /* TableViewController.swift */; };
 		02D8499A22E3E2E2005C65E0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8499922E3E2E2005C65E0 /* CollectionViewController.swift */; };
+		02DA8D6222E62425008DEE1B /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA8D6122E62425008DEE1B /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		02D8499122E3D117005C65E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D8499722E3E2B9005C65E0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		02D8499922E3E2E2005C65E0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		02DA8D6122E62425008DEE1B /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				02D8498722E3D111005C65E0 /* ViewController.swift */,
 				02B3A19622E4B7D000CCD669 /* BookCell.swift */,
 				02D8498922E3D111005C65E0 /* Main.storyboard */,
+				02DA8D6122E62425008DEE1B /* CollectionCell.swift */,
 				02B3A19422E4B72D00CCD669 /* DetailedViewController.swift */,
 				02D8498C22E3D117005C65E0 /* Assets.xcassets */,
 				02D8498E22E3D117005C65E0 /* LaunchScreen.storyboard */,
@@ -168,6 +171,7 @@
 				02B3A19522E4B72D00CCD669 /* DetailedViewController.swift in Sources */,
 				02B3A19122E4B57F00CCD669 /* bookService.swift in Sources */,
 				02D8498622E3D111005C65E0 /* AppDelegate.swift in Sources */,
+				02DA8D6222E62425008DEE1B /* CollectionCell.swift in Sources */,
 				02B3A18F22E4B52600CCD669 /* BookViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
