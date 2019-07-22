@@ -73,11 +73,30 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 cell.bookKindLabel.text = book.kind
                 cell.bookIdLabel.text = book.id
-              
-                
                 print(book.kind)
-                
+                print(book.thumbnail)
                 print(book.id)
+                print("123")
+                
+                let url = URL(string: book.thumbnail)!
+                
+                URLSession.shared.dataTask(with: url) { (dat, _, _) in
+                    
+                    if let data = dat {
+                        
+                        if let image = UIImage(data: data) {
+                            
+                            DispatchQueue.main.async {
+                                cell.bookthumbnail.image = image
+                                self.view.layoutIfNeeded()
+                                print("Received Image")
+                            }
+                        }
+                    }
+                    
+                    }.resume()
+                
+                
                 return cell
         }
         
